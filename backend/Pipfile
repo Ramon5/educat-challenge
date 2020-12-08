@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+pytest-django = "*"
+pytest-cov = "*"
+factory-boy = "*"
+pytest = "*"
+coverage = "*"
+autopep8 = "*"
+isort = "*"
+black = "==19.10b0"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-filter = "*"
+django-cors-headers = "*"
+pyyaml = "*"
+drf-yasg = "*"
+
+[requires]
+python_version = "3.8"
