@@ -10,7 +10,7 @@ class Lesson(models.Model):
     item_list = models.ManyToManyField("lesson.ItemList")
 
     class Meta:
-        unique_together = ["discipline", "created_at"]
+        index_together = ["discipline", "created_at"]
 
     def get_student_list(self):
         return [item for item in self.item_list.all()]
